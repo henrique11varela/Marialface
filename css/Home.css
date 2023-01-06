@@ -1,0 +1,14 @@
+.half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+#bgImg {
+    background-image: url(/pages/Home/background.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,39 @@
+:root {
+    --main-color: #3e603b;
+}
+
+nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4vw;
+    height: 100vh;
+    display: grid;
+    background: var(--main-color);
+}
+
+i {
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    place-self: center;
+    top: 1vw;
+}
+
+#hamburger,
+#hamburger:hover,
+#hamburger:focus,
+#hamburger:active {
+    place-self: center;
+    border: none;
+    background-color: transparent;
+    width: 2vw;
+    height: 2vw;
+}
+
+
+
+
