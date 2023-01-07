@@ -21,14 +21,19 @@ i {
 
 #logo {
     position: absolute;
-    top: calc(2vw - 1.5em);
-    left: calc(2vw - (1.5em * 0.75));
+    top: calc(2vw - 1em);
+    left: calc(2vw - (3em / 2 * 0.75));
+}
+
+#logo i {
+    font-size: 3em;
 }
 
 #hamburger,
 #hamburger:hover,
 #hamburger:focus,
-#hamburger:active {
+#hamburger:active,
+#hamburger:enabled {
     position: absolute;
     border: none;
     background-color: transparent;
@@ -36,6 +41,10 @@ i {
     top: calc(50vh - 1vw);
     width: 2vw;
     height: 2vw;
+}
+
+#hamburger i {
+    font-size: 2em;
 }
 
 #menu {
@@ -49,6 +58,10 @@ i {
 
 #menu * button {
     background-color: transparent;
+    border: none;
+    color: white;
+    padding: .5em;
+    margin: .5em;
 }
 
 

@@ -13,25 +13,30 @@
 </head>
 
 <body>
+    <!-- nav menu -->
     <nav>
         <a id="logo" href="/index.html">
-            <i class="fa-brands fa-pagelines fa-3x"></i>
+            <i class="fa-brands fa-pagelines"></i>
         </a>
-        <button id="hamburger" onclick="openMenu()">
-            <i id="iham" class="fa-solid fa-bars fa-2x"></i>
-            <i id="icross" class="fa-solid fa-xmark fa-2x hidden"></i>
+        <button id="hamburger" onclick="toggleMenu()">
+            <i id="iham" class="fa-solid fa-bars"></i>
+            <i id="icross" class="fa-solid fa-xmark hidden"></i>
         </button>
         <div id="menu" class="hidden">
             <div class="flex">
-                <button onclick="">ABCulinária</button>
-                <button onclick="">Perguntas Frequentes</button>
-                <button onclick="">Receitas</button>
+                <button onclick="changeIframeSrc('mainFrame', '/pages/ABCulinaria/ABCulinaria.html')">ABCulinária</button>
+                <button onclick="changeIframeSrc('mainFrame', '/pages/PerguntasFrequentes/PerguntasFrequentes.html')">Perguntas Frequentes</button>
+                <button onclick="changeIframeSrc('mainFrame', '/pages/Receitas/Receitas.html')">Receitas</button>
             </div>
         </div>
     </nav>
+    <!-- Main sections -->
     <iframe id="mainFrame" src="/pages/Home/Home.html" frameborder="0"></iframe>
+    <!-- app.js -->
     <script src="/scripts/app.js"></script>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1a4aca6b7d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
