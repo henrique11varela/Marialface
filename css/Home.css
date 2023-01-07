@@ -12,3 +12,13 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
+
+.social {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+}
+
+.half a i {
+    color: black;
+}

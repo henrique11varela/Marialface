@@ -7,10 +7,12 @@ nav {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 4vw;
+    min-width: 4vw;
     height: 100vh;
     display: grid;
+    place-items: center;
     background: var(--main-color);
+    z-index: 100;
 }
 
 i {
@@ -19,21 +21,34 @@ i {
 
 #logo {
     position: absolute;
-    place-self: center;
-    top: 1vw;
+    top: calc(2vw - 1.5em);
+    left: calc(2vw - (1.5em * 0.75));
 }
 
 #hamburger,
 #hamburger:hover,
 #hamburger:focus,
 #hamburger:active {
-    place-self: center;
+    position: absolute;
     border: none;
     background-color: transparent;
+    left: 1vw;
+    top: calc(50vh - 1vw);
     width: 2vw;
     height: 2vw;
 }
 
+#menu {
+    margin-left: 4vw;
+}
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu * button {
+    background-color: transparent;
+}
 
 
