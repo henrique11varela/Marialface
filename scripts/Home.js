@@ -9,4 +9,4 @@ function calculateYears(id, date) {
 
 // on load
 calculateYears("age", new Date(2001, 8, 8));
-calculateYears("vegTime", new Date(2001, 8, 8));
+calculateYears("vegTime", new Date(2017, 9, 1));
