@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --main-color: #3e603b;
+}
+
+/* Tools */
+
+.hidden {
+    display: none;
+}
+
+/* Desktop */
+
+nav {
+    position: fixed;
+    background-color: var(--main-color);
+    height: 100vh;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+}
+
+nav button {
+    margin: auto 0;
+}
+
+button i {
+    color: white;
+    font-size: 2rem;
+}
+
+#logo {
+    color: white;
+    font-size: 3rem;
+}
+
+main {
+    position: absolute;
+    left: 4rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainScreen {
+    min-height: 100vh;
+    min-width: calc(100vw - 4rem);
+    display: flex;
+}
+
+h1 {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 85px;
+    font-weight: 100;
+    color: var(--main-color);
+    margin-bottom: 4vh;
+}
+
+h2 {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    nav {
+        height: 4rem;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    #logo {
+        margin: 0 0 .5rem .5rem;
+    }
+    
+    nav button {
+        margin-right: .5rem;
+    }
+
+    main {
+        left: 0;
+    }
+    
+    #mainScreen {
+        flex-direction: column;
+        min-height: calc(100vh - 4rem);
+    }
+}
