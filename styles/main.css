@@ -12,6 +12,7 @@
 
 /* Desktop */
 
+/* navbar */
 nav {
     position: fixed;
     background-color: var(--main-color);
@@ -32,10 +33,19 @@ button i {
     font-size: 2rem;
 }
 
+.navMenu { /* !  TODO*/
+    position: absolute;
+    left: 4rem;
+    top: 0;
+    bottom: 0;
+}
+
 #logo {
     color: white;
     font-size: 3rem;
 }
+
+/* main */
 
 main {
     position: absolute;
@@ -72,6 +82,10 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+span {
+    margin: 0 !important;
 }
 
 
