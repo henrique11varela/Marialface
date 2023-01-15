@@ -6,13 +6,22 @@
 
 /* Tools */
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 /* Desktop */
 
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
 /* Parts */
+
+a {
+    text-decoration: none;
+}
 
 h1 {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -31,12 +40,18 @@ h2 {
 
 p {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
 }
 
-span {
+span,
+strong {
     margin: 0 !important;
+    padding: 0 !important;
+}
+
+strong {
+    font-weight: 300;
 }
 
 hr {
@@ -66,11 +81,16 @@ button i {
     font-size: 2rem;
 }
 
-.navMenu { /* !  TODO*/
-    position: absolute;
-    left: 4rem;
-    top: 0;
-    bottom: 0;
+button i.hidden {
+    display: none;
+}
+
+.navMenu {
+    overflow: hidden;
+}
+
+.navMenu.hidden { /* !  TODO*/
+    width: 0;
 }
 
 #logo {
@@ -91,11 +111,6 @@ main {
     padding: 0 !important;
 }
 
-#mainScreen {
-    min-height: 100vh;
-    min-width: calc(100vw - 4rem);
-    display: flex;
-}
 
 /* Footer */
 
@@ -103,6 +118,7 @@ footer {
     background-color: var(--main-color);
     width: 100%;
     margin: 0;
+    padding: 1rem;
 }
 
 footer * {
@@ -113,12 +129,19 @@ footer * {
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+
     nav {
         height: 4rem;
         width: 100vw;
         flex-direction: row;
         justify-content: space-between;
-        
+    }
+
+    nav button {
+        margin-right: 1rem;
     }
     
     #logo {
@@ -133,8 +156,4 @@ footer * {
         left: 0;
     }
     
-    #mainScreen {
-        flex-direction: column;
-        min-height: calc(100vh - 4rem);
-    }
 }

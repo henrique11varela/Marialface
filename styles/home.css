@@ -45,12 +45,13 @@
 }
 
 #about-website p {
-    width: 50vw;
+    width: 100%;
     margin: 2rem auto .5rem auto;
     text-align: center;
+    font-size: 1.5rem;
 }
 
-/* about-me */
+/* bandas */
 .banda {
     width: 100%;
     margin-top: 3rem;
@@ -76,12 +77,10 @@
     margin: 1rem 2rem;
 }
 
-.banda div p {
-    font-size: 1.2rem;
-}
 
 
-/* Mobile */
+/* Mobile ----------------------------------------------------------------------*/
+
 @media screen and (max-width: 767px) {
     #titleScreen:after {
         content: "";
@@ -105,10 +104,6 @@
 
     .social {
         top: calc(1vw + 4rem);
-    }
-
-    #about-website p {
-        width: 100vw;
     }
 
     .banda {
