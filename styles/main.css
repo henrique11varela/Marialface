@@ -12,7 +12,40 @@
 
 /* Desktop */
 
+/* Parts */
+
+h1 {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 85px;
+    font-weight: 100;
+    color: var(--main-color);
+    margin-bottom: 4vh;
+}
+
+h2 {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+span {
+    margin: 0 !important;
+}
+
+hr {
+    width: 70vw;
+    border-bottom: var(--main-color) 1px solid;
+}
+
 /* navbar */
+
 nav {
     position: fixed;
     background-color: var(--main-color);
@@ -55,6 +88,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 !important;
 }
 
 #mainScreen {
@@ -63,34 +97,22 @@ main {
     display: flex;
 }
 
-h1 {
-    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 85px;
-    font-weight: 100;
-    color: var(--main-color);
-    margin-bottom: 4vh;
+/* Footer */
+
+footer {
+    background-color: var(--main-color);
+    width: 100%;
+    margin: 0;
 }
 
-h2 {
-    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    color: var(--main-color);
+footer * {
+    color: white;
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-span {
-    margin: 0 !important;
-}
 
 
 /* Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     nav {
         height: 4rem;
         width: 100vw;
