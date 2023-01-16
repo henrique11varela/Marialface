@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
 :root {
     --main-color: #3e603b;
@@ -7,7 +7,7 @@
 /* Tools */
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 /* Desktop */
@@ -52,10 +52,6 @@ strong {
     padding: 0 !important;
 }
 
-strong {
-    font-weight: 300;
-}
-
 hr {
     width: 70vw;
     border-bottom: var(--main-color) 1px solid;
@@ -87,6 +83,19 @@ hr {
     background-color: var(--main-color);
     overflow: hidden;
     z-index: 98;
+    margin: 0;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navMenu li a {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 2rem;
 }
 
 button i {
@@ -94,13 +103,12 @@ button i {
     font-size: 2rem;
 }
 
-button i.hidden {
-    display: none;
-}
-
 #logo {
     color: white;
     font-size: 3rem;
+    position: absolute;
+    top: .25rem;
+    left: .4rem;
 }
 
 /* main */
@@ -113,9 +121,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 !important;
 }
-
 
 /* Footer */
 
@@ -128,6 +134,7 @@ footer {
 
 footer * {
     color: white;
+    text-align: center;
 }
 
 
@@ -141,18 +148,18 @@ footer * {
     .innerNav {
         height: 4rem;
         width: 100vw;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         border-bottom: white 1px solid;
         border-right: none;
     }
 
     .innerNav button {
-        margin-right: 1rem;
+        margin-right: .5rem;
     }
     
     #logo {
-        margin: 0 0 .5rem .5rem;
+        top: .25rem;
     }
 
     #navMenu {
@@ -162,8 +169,11 @@ footer * {
         bottom: auto;
     }
 
+    #navMenu li a {
+        font-size: 1.5rem;
+    }
+
     main {
         left: 0;
     }
-    
 }
