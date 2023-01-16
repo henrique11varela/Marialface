@@ -59,11 +59,18 @@
     margin: 2rem auto;
     padding: 0 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banda img {
-    max-height: 400px;
+    max-width: 500px;
+    width: 100%;
     object-fit: contain;
+}
+.banda a {
+    width: 100%;
+    max-width: 500px;
 }
 
 .banda div {
@@ -108,5 +115,14 @@
 
     .banda {
         flex-direction: column;
+        max-width: 100%;
+    }
+
+    .banda div p {
+        text-align: center;
+    }
+
+    .banda img {
+        width: 100%;
     }
 }

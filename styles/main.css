@@ -6,9 +6,9 @@
 
 /* Tools */
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 
 /* Desktop */
 
@@ -29,6 +29,7 @@ h1 {
     font-weight: 100;
     color: var(--main-color);
     margin-bottom: 4vh;
+    text-align: center;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
     font-size: 30px;
     font-weight: 400;
     color: var(--main-color);
+    text-align: center;
 }
 
 p {
@@ -61,19 +63,30 @@ hr {
 
 /* navbar */
 
-nav {
+.innerNav {
+    z-index: 99;
     position: fixed;
     background-color: var(--main-color);
     height: 100vh;
-    width: 4rem;
+    min-width: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 99;
+    border-right: white 1px solid;
 }
 
-nav button {
+.innerNav button {
     margin: auto 0;
+}
+
+#navMenu {
+    position: fixed;
+    left: 4rem;
+    top: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    overflow: hidden;
+    z-index: 98;
 }
 
 button i {
@@ -83,14 +96,6 @@ button i {
 
 button i.hidden {
     display: none;
-}
-
-.navMenu {
-    overflow: hidden;
-}
-
-.navMenu.hidden { /* !  TODO*/
-    width: 0;
 }
 
 #logo {
@@ -133,23 +138,28 @@ footer * {
         flex-direction: column;
     }
 
-    nav {
+    .innerNav {
         height: 4rem;
         width: 100vw;
         flex-direction: row;
         justify-content: space-between;
+        border-bottom: white 1px solid;
+        border-right: none;
     }
 
-    nav button {
+    .innerNav button {
         margin-right: 1rem;
     }
     
     #logo {
         margin: 0 0 .5rem .5rem;
     }
-    
-    nav button {
-        margin-right: .5rem;
+
+    #navMenu {
+        left: 0;
+        top: 4rem;
+        right: 0;
+        bottom: auto;
     }
 
     main {
