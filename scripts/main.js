@@ -14,7 +14,6 @@ function navToggle() {
 
 
 function navInsert() {
-    //let navHtml = '<nav><div class="innerNav"><a id="logo" href="/index.html"><i id="logo" class="fa-brands fa-pagelines"></i></a><button id="hamburger" class="btn" onclick="navToggle()"><i id="iham" class="fa-solid fa-bars"></i><i id="icross" class="fa-solid fa-xmark hidden"></i></button></div><div id="navMenu" class="animate__animated hidden"><a href="#">ABCulinária</a><a href="#">Perguntas Frequentes</a><a href="#">Receitas</a></div></nav>';
     let navHtml = '<nav><div class="innerNav"><a id="logo" href="/index.html"><i id="logo" class="fa-brands fa-pagelines"></i></a><button id="hamburger" class="btn" onclick="navToggle()"><i id="iham" class="fa-solid fa-bars"></i><i id="icross" class="fa-solid fa-xmark hidden"></i></button></div><ul id="navMenu" class="animate__animated hidden"><li><a href="#">ABCulinária</a></li><li><a href="#">Perguntas Frequentes</a></li><li><a href="#">Receitas</a></li></ul></nav>';
     document.body.innerHTML = navHtml + document.body.innerHTML;
 }
