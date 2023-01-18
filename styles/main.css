@@ -205,6 +205,11 @@ main {
     border-right: #3e603b 1px solid;
 }
 
+.secStart * {
+    margin-right: 48px;
+    text-align: end;
+}
+
 .secEnd {
     width: 60%;
 }
@@ -300,6 +305,15 @@ footer * {
     .secStart {
         width: 100%;
         border-right: none;
+    }
+    
+    .secStart * {
+        margin: auto;
+        text-align: center;
+    }
+
+    .secStart p {
+        display: none;
     }
     
     .secEnd {
