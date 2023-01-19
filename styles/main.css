@@ -44,7 +44,8 @@ h2 {
     text-align: center;
 }
 
-p {
+p,
+li {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     font-weight: 100;
@@ -97,6 +98,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: auto;
 }
 
 #navMenu li a {
