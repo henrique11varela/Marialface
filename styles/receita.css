@@ -4,10 +4,46 @@
 
 /* Desktop */
 
+.sec {
+    position: relative;
+    align-items: flex-start;
+}
+
+.sec h4,
+li {
+    margin: 0 !important;
+}
+
+.sec img {
+    max-width: 70%;
+    position: sticky;
+    top: 4rem;
+}
+
+.secEnd {
+    align-items: center;
+}
+
+ul {
+    width: 70%;
+}
+
 
 
 /* Mobile */
 
 @media screen and (max-width: 767px) {
+    .sec {
+        align-items: center;
+    }
+    .sec img {
+        position: initial;
+        max-width: 80%;
+        margin: 0;
+    }
+    .secEnd {
+        max-width: 80%;
+        align-items: center;
+    }
 
 }

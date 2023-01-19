@@ -6,7 +6,7 @@ Project Description
 
 ### Todo
 
-- [ ] change vegTime date "home.js"  
+- [ ] acabar receita a  
 
 ### In Progress
 
