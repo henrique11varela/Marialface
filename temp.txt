@@ -24,7 +24,7 @@
 <div class="sec">
     <img class="secStart" src="" alt="">
     <div class="secEnd">
-        <h2></h2>
+        <h2>Ingredientes</h2>
         <h4></h4>
         <ul>
             <li></li>
@@ -33,7 +33,7 @@
 </div>
 <!-- instruçoes ------------------------------------------------------------------------------------------->
 <div id="instrucoes" class="sec">
-    <h2></h2>
+    <h2>Instruções</h2>
     <h4></h4>
     <ol>
         <li></li>
