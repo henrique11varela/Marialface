@@ -127,9 +127,10 @@ main {
     position: absolute;
     left: 4rem;
     right: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -230,6 +231,16 @@ footer * {
     text-align: center;
 }
 
+#ABC {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#ABC a {
+    color: black;
+    font-size: 30px;
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
     body {
@@ -288,7 +299,7 @@ footer * {
     #titleScreen {
         height: calc(100vh - 4rem);
     }
-    
+
     #titleScreen h1 {
         font-size: 18vw;
     }
@@ -308,7 +319,7 @@ footer * {
         width: 100%;
         border-right: none;
     }
-    
+
     .secStart * {
         margin: auto;
         text-align: center;
@@ -317,7 +328,7 @@ footer * {
     .secStart p {
         display: none;
     }
-    
+
     .secEnd {
         width: 100%;
     }

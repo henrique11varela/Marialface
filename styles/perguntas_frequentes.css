@@ -1,0 +1,27 @@
+:root {
+    --main-color: #3e603b;
+}
+
+p {
+    max-height: 100vh;
+    transition: max-height 2s linear;
+    overflow-y: hidden;
+    transition-delay: 0ms;
+    margin: 0 !important;
+}
+
+p.hidden {
+    display: block !important;
+    max-height: 0;
+    transition: max-height 2s cubic-bezier(0, 0.5, 0, 0.9);
+    transition-delay: 0ms;
+}
+
+.sec {
+    flex-direction: column;
+}
+
+.pergunta {
+    border-bottom: 1px solid var(--main-color) !important;
+}
+
