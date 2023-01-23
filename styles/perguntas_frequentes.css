@@ -25,3 +25,18 @@ p.hidden {
     border-bottom: 1px solid var(--main-color) !important;
 }
 
+
+/* Mobile */
+@media screen and (max-width: 767px) { 
+    h1 {
+        font-size: 18vw;
+    }
+
+    button {
+        font-size: 1.2rem !important;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
