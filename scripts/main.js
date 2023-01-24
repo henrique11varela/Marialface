@@ -15,7 +15,7 @@ function navToggle() {
 }
 
 function navInsert() {
-    let navHtml = '<nav><div class="innerNav"><a id="logo" href="/index.html"><i id="logo" class="fa-brands fa-pagelines"></i></a><button id="hamburger" class="btn" onclick="navToggle()"><i id="iham" class="fa-solid fa-bars"></i><i id="icross" class="fa-solid fa-xmark hidden"></i></button></div><ul id="navMenu" class="animate__animated hidden"><li><a id="homeLink" href="/index.html">Home</a></li><li><a href="/pages/ABCulinaria/ABCulinaria.html">ABCulinária</a></li><li><a href="/pages/Perguntas_Frequentes/Perguntas_Frequentes.html">Perguntas Frequentes</a></li><li><a href="#">Receitas</a></li></ul></nav>';
+    let navHtml = '<nav><div class="innerNav"><a id="logo" href="/index.html"><i id="logo" class="fa-brands fa-pagelines"></i></a><button id="hamburger" class="btn" onclick="navToggle()"><i id="iham" class="fa-solid fa-bars"></i><i id="icross" class="fa-solid fa-xmark hidden"></i></button></div><ul id="navMenu" class="animate__animated hidden"><li><a id="homeLink" href="/index.html">Home</a></li><li><a href="/pages/ABCulinaria/ABCulinaria.html">ABCulinária</a></li><li><a href="/pages/Perguntas_Frequentes/Perguntas_Frequentes.html">Perguntas Frequentes</a></li><li><a href="/pages/Receitas/Receitas.html">Receitas</a></li></ul></nav>';
     document.body.innerHTML = navHtml + document.body.innerHTML;
 }
 
